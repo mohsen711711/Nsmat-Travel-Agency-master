@@ -183,34 +183,69 @@ nav {
                 padding: 8px; /* تقليل الحشوة داخل البطاقة */
             }
         }
-		    /* استعلامات الوسائط لتعديل التصميم على الشاشات الصغيرة */
-        @media (max-width: 768px) {
-            header {
-                font-size: 1.5em; /* حجم خط الرأس على الشاشات الصغيرة */
-            }
 
-            .card {
-                padding: 10px; /* تقليل الحشوة داخل البطاقة */
-            }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
 
-            .container {
-                padding: 10px; /* تقليل الحشوة داخل الحاوية */
-            }
+nav {
+    background-color: #007bff; /* لون خلفية القائمة */
+    padding: 10px;
+}
 
-            body {
-                font-size: 14px; /* حجم الخط الأساسي على الشاشات الصغيرة */
-            }
-        }
+ul {
+    list-style-type: none; /* إزالة نقاط القائمة */
+    padding: 0;
+    margin: 0;
+}
 
-        @media (max-width: 480px) {
-            header {
-                font-size: 1.2em; /* حجم خط الرأس على الشاشات الأصغر */
-            }
+li {
+    position: relative; /* لتسهيل تنسيق القوائم المنسدلة */
+}
 
-            body {
-                font-size: 12px; /* حجم الخط الأساسي على الشاشات الأصغر */
-            }
-        }
+a {
+    color: white; /* لون النص */
+    text-decoration: none; /* إزالة الخط السفلي */
+    padding: 10px 15px;
+    display: block; /* جعل الروابط ككتل لتسهيل النقر */
+}
+
+a:hover {
+    background-color: #0056b3; /* تغيير اللون عند التمرير */
+}
+
+/* تنسيق القوائم المنسدلة */
+.dropdown {
+    display: none; /* إخفاء القوائم المنسدلة بشكل افتراضي */
+    position: absolute; /* جعلها تظهر فوق العناصر الأخرى */
+    background-color: #007bff; /* لون خلفية القوائم المنسدلة */
+    z-index: 1; /* وضع القوائم المنسدلة فوق العناصر الأخرى */
+    width: 200px; /* عرض القوائم المنسدلة */
+}
+
+li:hover .dropdown {
+    display: block; /* عرض القوائم المنسدلة عند التمرير فوق العنصر */
+}
+
+/* استعلامات الوسائط لجعل القائمة متجاوبة */
+@media (max-width: 768px) {
+    nav {
+        padding: 5px; /* تقليل الحشوة في القائمة على الشاشات الصغيرة */
+    }
+
+    ul {
+        display: flex; /* عرض العناصر في صف واحد */
+        flex-direction: column; /* جعل العناصر عمودية */
+    }
+
+    .dropdown {
+        width: 100%; /* جعل عرض القوائم المنسدلة 100% */
+        position: static; /* تغيير الوضع ليظهر تحت العنصر */
+    }
+}
     </style>
 
 
@@ -272,6 +307,7 @@ nav {
                             </li>
                         </ul>
                     </li>
+			
                     <li><a href="services.html">الخدمات</a></li>
                     <li><a href="about.html">معلومات</a></li>
                     <li><a href="contact.html">اتصل بنا</a></li>
