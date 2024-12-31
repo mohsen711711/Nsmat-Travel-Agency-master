@@ -20,6 +20,8 @@
             margin: 15px auto; /* لتوسيع الهوامش */
             
         }
+
+	    
     </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -179,6 +181,34 @@ nav {
 
             .card {
                 padding: 8px; /* تقليل الحشوة داخل البطاقة */
+            }
+        }
+		    /* استعلامات الوسائط لتعديل التصميم على الشاشات الصغيرة */
+        @media (max-width: 768px) {
+            header {
+                font-size: 1.5em; /* حجم خط الرأس على الشاشات الصغيرة */
+            }
+
+            .card {
+                padding: 10px; /* تقليل الحشوة داخل البطاقة */
+            }
+
+            .container {
+                padding: 10px; /* تقليل الحشوة داخل الحاوية */
+            }
+
+            body {
+                font-size: 14px; /* حجم الخط الأساسي على الشاشات الصغيرة */
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                font-size: 1.2em; /* حجم خط الرأس على الشاشات الأصغر */
+            }
+
+            body {
+                font-size: 12px; /* حجم الخط الأساسي على الشاشات الأصغر */
             }
         }
     </style>
