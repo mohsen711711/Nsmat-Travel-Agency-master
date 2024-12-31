@@ -127,7 +127,7 @@ nav {
             font-family: Arial, sans-serif; /* خط الصفحة */
             margin: 0; /* إزالة الهوامش الافتراضية */
             padding: 0; /* إزالة الحشوات الافتراضية */
-            line-height: 1.6; /* ارتفاع الخط */
+            line-height: 1.2; /* ارتفاع الخط */
         }
 
         /* تنسيق الرأس */
@@ -149,8 +149,8 @@ nav {
         /* إعدادات الشبكة */
         .grid {
             display: grid; /* استخدام شبكة CSS */
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* توزيع الأعمدة بشكل تلقائي */
-            gap: 20px; /* الفجوة بين العناصر */
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* توزيع الأعمدة بشكل تلقائي */
+            gap: 15px; /* الفجوة بين العناصر */
         }
 
         /* تنسيق البطاقة */
@@ -158,7 +158,7 @@ nav {
             background: #f4f4f4; /* لون خلفية البطاقة */
             padding: 15px; /* حشوة داخلية */
             border-radius: 5px; /* زوايا دائرية */
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* ظل البطاقة */
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1); /* ظل البطاقة */
         }
 
         /* تنسيق التذييل */
@@ -173,9 +173,9 @@ nav {
         }
 
         /* استعلامات الوسائط لتعديل التصميم على الشاشات الصغيرة */
-        @media (max-width: 500px) {
+        @media (max-width: 250px) {
             header {
-                font-size: 1.0em; /* حجم خط الرأس على الشاشات الصغيرة */
+                font-size: 0.9em; /* حجم خط الرأس على الشاشات الصغيرة */
             }
 
             .card {
